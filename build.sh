@@ -7,7 +7,7 @@ ccache -M 25G
 TANGGAL=$(date +"%Y%m%d-%H")
 export ARCH=arm64
 export KBUILD_BUILD_HOST=android-build
-export KBUILD_BUILD_USER="kardebayan"
+export KBUILD_BUILD_USER="kim_chi_96"
 clangbin=clang/bin/clang
 if ! [ -a $clangbin ]; then git clone --depth=1 https://github.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6443078 clang
 fi
@@ -40,7 +40,7 @@ echo -e " Kernel Compile Successful"
 git clone --depth=1 https://github.com/Amritorock/AnyKernel3 -b r5x AnyKernel
 cp out/arch/arm64/boot/Image.gz AnyKernel
 cd AnyKernel
-zip -r9 Stormbreaker-miatoll-${TANGGAL}.zip *
+zip -r9 BlackHole-V1.4-miatoll-${TANGGAL}.zip *
 cd ../
 fi
 }
